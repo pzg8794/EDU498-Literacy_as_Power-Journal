@@ -1,0 +1,22 @@
+\section*{Appendix: Planned Figures}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.2cm,
+    box/.style={rectangle, rounded corners, draw=PrimaryRed, fill=SoftBlue, thick, align=center, minimum width=3.1cm, minimum height=0.8cm},
+    arrow/.style={-{Latex[length=2mm]}, thick, draw=DarkGray}
+]
+\node[box] (comm) {Classroom\\Communication};
+\node[box, right=of comm] (lit) {Literacy\\Demands};
+\node[box, right=of lit] (access) {Student\\Access};
+\node[box, below=of lit] (justice) {Social Justice\\Outcome};
+\draw[arrow] (comm) -- (lit);
+\draw[arrow] (lit) -- (access);
+\draw[arrow] (access) -- (justice);
+\draw[arrow] (comm) |- (justice);
+\end{tikzpicture}
+\caption{Draft communication-access map. This figure will be refined after the paper is reviewed.}
+\end{figure}
+
+\placeholderfigure{final-cast-udl-screenshot}{Replace with final CAST UDL Guidelines 3.0 screenshot or approved graphic organizer.}{This placeholder satisfies the LaTeX figure structure while leaving room for the final visual artifact.}
